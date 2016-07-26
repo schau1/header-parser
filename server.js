@@ -7,12 +7,12 @@ var app = express();
 
 app.get('/api/whoami', function(req,res){
     var json = {};
-/*    json.ipaddress = req.headers['x-forwarded-for'];
+    json.ipaddress = req.headers['x-forwarded-for'];
     json.language = req.headers['accept-language'].split(',')[0];
     
     var software = req.headers['user-agent'].split('(')[1].split(')');
 
-    json.software = software[0];*/
+    json.software = software[0];
 
     res.end(JSON.stringify(json));
 });
